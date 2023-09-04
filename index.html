@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sistema Bancário</title>
+</head>
+<body>
+   
+        <h1>Sistema Bancário</h1>
+        <form>
+
+            Numero: <input id="numero"><br>
+            Saldo: <input id="saldo"><br>
+            Data de aniversário: <input id="dataAniversario"><br>
+
+            <label for="opcoesContas">Escolha o tipo de conta:</label>
+
+            <select name="tipos" id="seletorTipos">
+                <option value="Conta Regular">Conta</option>
+                <option value="Conta Bonificada">Conta Bonificada</option>
+                <option value="Conta Poupança">Poupança</option>
+            </select>
+            <br>
+            <button onclick="contaController.inserir(event)">Inserir</button>
+        </form>
+        
+        <script src="js/modelo/conta.js"></script>
+        <script src="js/modelo/conta-bonificada.js"></script>
+        <script src="js/modelo/poupanca.js"></script>
+        <script src="js/modelo/repositorio-contas.js"></script>
+        <script src="js/controlador/conta-controller.js"></script>
+        <script src="js/script.js"></script>
+   
+ 
+</body>
+</html>
